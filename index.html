@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation and DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body1">
+    <h1>LifeSteal SMP Application Form</h1>
+    <form id="form1" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Application Form</legend>
+            <label for="name" >Name:</label>
+            <input type="text" placeholder="Please Enter Your Name" id="name " name="name">
+
+<br><br><br>
+
+           <div>
+            <label for="username">In-Game Name:</label>
+            <input type="text" placeholder="Your In-Game Name">
+            <span id="nameerror" class="error"></span>
+           </div>
+
+<br><br><br>
+
+            <div>
+                <label for="age">Age:</label>
+            <input type="number" placeholder="Your Age Please">
+            </div>
+<br><br><br>
+           <div>
+            <label for="timezone">TimeZone:</label>
+            <input type="text" placeholder="Your TimeZone">
+           </div>
+<br><br><br>
+           <div>
+            <label for="Nationality">Nationality:</label>
+            <input type="text" placeholder="Your Nationality">
+           </div>
+<br><br><br>
+            <div>
+                <label for="Playing Since">Playing Since:</label>
+            <input type="date">
+            </div>
+<br><br><br>
+            <div>
+                <label for="content platform">Main Content Platform:</label>
+            <br><br>
+            <input type="checkbox"><label for="YT">Youtube</label>
+            <br>
+            <input type="checkbox"><label for="twitch">Twitch</label>
+            <br>
+            <input type="checkbox"><label for="TikTok">TikTok</label>
+            <br>
+            <input type="checkbox"><label for="Instagram">Instagram</label>
+            <br>
+            <input type="checkbox"><label for="Twitter">Twitter</label>
+<br><br><br>      
+            <label for="activity">You're Strength:</label>
+            <br>
+            <input type="radio"><label for="build">Building</label>
+            <br>
+            <input type="radio"><label for="Pvp">PVP</label>
+            <br>
+            <input type="radio"><label for="SpeedRunner">SpeedRunner</label>
+            <br>
+            <input type="radio"><label for="escapist">Trap Specialist</label>
+            <br>
+            <input type="radio"><label for="redstone">RedStone Engineer</label>
+            </div>
+<br><br><br>
+            <div>
+                <label for="Defense or Offense">Defence or Offense?</label>
+            <br>
+            <input type="radio"><label for="Defence">Defense</label>
+            <br>
+            <input type="radio"><label for="offense">Offense</label>
+            </div>
+<br><br><br>
+            <div>
+                <label for="discord">Discord ID:</label>
+            <input type="text" placeholder="Discord ID">
+            </div>
+<br><br><br>
+            <div>
+                <label for="ytt">Youtube Channel:</label>
+            <input type="text" placeholder="Youtube Channel Name">
+            </div>
+<br><br><br>
+            <div>
+                <label for="twitch">Twitch:</label>
+            <input type="text" placeholder="Twitch">
+            </div>
+<br><br><br>
+            <div>
+                <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email">
+            </div>
+<br><br><br><br><br>
+
+<input type="submit">
+        </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
