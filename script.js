@@ -1,32 +1,30 @@
-function validateForm() {
-    const name = document.getElementById('name').ariaValueMax.trim();
+document.getElementById("formnew").addEventListener("submit", function(event) {
+    const password = document.getElementById("password1").value.trim();
 
-    const email = document.getElementById('email').ariaValueMax.trim();
+    if(password.length < 8){
+        alert("Password requires to be at least 8 characters long");
+        event.preventDefault();
+    }
+});
 
-    document.getElementById('nameerror')
-.textContent = '';
 
-document.getElementById('emailerror').textContent = '';
+document.getElementById("formnew").addEventListener("submit", function(event) {
+    const password = document.getElementById("password1").value.trim();
 
-let isValid = true;
+    if(password.length < 8){
+        alert("Password requires to be at least 8 characters long");
+        event.preventDefault();
+    }
+});
 
-if (name === '') {
-    document.getElementById('nameError').textContent = 'Name is required please';
 
-    isValid = false;
-}
+function myFunction() {
+    let input = document.getElementById("inp");
 
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if (email === ''){
-    document.getElementById('emailerror').textContent = 'Email Required Please!!!';
-
-    isValid = false;
-}
-
-else if(!emailPattern.test(email)) {
-    document.getElementById('emailerror').textContent = 'Invalid Email. Please Input a proper email!!!';
-
-    isValid = false;
-}
+    if(!input.checkValidity()){
+        document.getElementById("result").innerHTML = input.validationMessage;
+    }
+    else{
+        document.getElementById("result").innerHTML = "Input is alright";
+    }
 }
